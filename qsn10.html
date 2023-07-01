@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 10</title>
+  </head>
+  <body>
+    <h3>int search (int[]a, int number)</h3>
+    <p>
+      Search for the int number in Array a. If found, return its position/index.
+      Assume there are n numbers in the array.
+    </p>
+    <script>
+        function Search(a, number) {
+            for (let i = 0; i < a.length; i++) {
+            if (a[i] === number) {
+                return i;
+            }
+            }
+            return -1; 
+        }
+
+        const array = [5, 10, 15, 20, 25];
+        const number = 25;
+        const position = Search(array, number);
+        document.write(`Array is [${array}] <br>`);
+        document.write(`Number is ${number} <br>`);
+        document.write(`Position is ${position} <br>`);
+        console.log(position); // Output: 2
+    </script>
+  </body>
+</html>

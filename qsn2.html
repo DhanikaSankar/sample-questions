@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <h3>int[] find_mismatch(int[]a, int[]b)</h3>
+    <p>If an array a is [1,2,4,32,12,6,8] and b is [2,6,10,12,14,17] return or print the number which is present in a not in b.</p>
+    <script>
+        let a = [1,2,4,32,12,6,8];
+        let b = [2,6,10,12,14,17];
+        var c = a.filter(f => !b.includes(f));
+        // OR
+        // let c = a.filter(
+        //     function(i) {
+        //         return this.indexOf(i) < 0;
+        //     },
+        //     b
+        // );
+        document.write(`a = [${a}] <br>`);
+        document.write(`b = [${b}] <br>`);
+        document.write(`Number present in a not in b = [${c}] <br>`);
+    </script>
+
+</body>
+</html>

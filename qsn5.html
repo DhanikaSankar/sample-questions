@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 5</title>
+  </head>
+  <body>
+    <h3>String removeDuplicate(char[]a)</h3>
+    <p>
+      Remove duplicate charactors from the string and return a new string with
+      no duplicate character for eg: if the string is 'calculator' return string
+      as 'utor'
+    </p>
+    <script>
+        let inputString= prompt("Enter String");
+
+        function removeDuplicates(str) {
+            let uniqueStr = "";
+            for (let i = 0; i < str.length; i++) {
+            if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+                uniqueStr += str[i];
+            }
+            }
+            return uniqueStr;
+        }
+
+        const result = removeDuplicates(inputString);
+        document.write(`Given string is ${inputString} <br>`);
+        document.write(`String without duplicate character is ${result}`);
+
+    </script>
+  </body>
+</html>

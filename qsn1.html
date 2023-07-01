@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question One</title>
+  </head>
+  <body>
+    <h3>int swap(int a int b)</h3>
+    <p>Swap two numbers without using a third number.</p>
+    <script>
+      let a = prompt("Enter First Number");
+      let b = prompt("Enter Second Number");
+      document.write(`First Number : ${a} <br>`);
+      document.write(`Second Number : ${b} <br>`);
+      document.write(`<b>After Swapping </b><br>`);
+      [a,b] = [b,a];
+      // OR
+      //   a = a * b;
+      //   b = a / b;
+      //   a = a / b;
+      document.write(`First Number : ${a} <br>`);
+      document.write(`Second Number : ${b}`);
+    </script>
+  </body>
+</html>

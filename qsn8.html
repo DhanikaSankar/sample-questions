@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+    <h3>String replaceSpace(char[] sentence)</h3>
+    <p>Replace every space in the string sentence with '--' and return the string.
+        Eg:If the sentence is 'I am a doctor' you need to return 'i--am--a--doctor'
+    </p>
+    <script>
+        var str = 'I am a doctor';
+        var replaced = str.split(' ').join('--');
+        document.write(`Given String is ${str} <br>`);
+        document.write(`Replaced String is ${replaced}`);
+    </script>
+    
+</body>
+</html>

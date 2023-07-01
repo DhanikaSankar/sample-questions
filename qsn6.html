@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 6</title>
+  </head>
+  <body>
+    <h3>Boolean checkZeros(int[] numberList)</h3>
+    <p>
+      Check if the array numberList has one and only one zero in it. Only use a
+      single For loop. Assume there are n number in the array.
+    </p>
+    <script>
+        let array = [0, 1, 2, 5];
+        
+        function checkZeros(numberList) {
+            let zeroCount = 0;
+
+            for (let i = 0; i < numberList.length; i++) {
+            if (numberList[i] === 0) {
+                zeroCount++;
+                if (zeroCount > 1) {
+                return false;
+                }
+            }
+            }
+            return zeroCount === 1;
+        }
+
+        const result = checkZeros(array);
+
+        document.write(`Given Array is [${array}] <br>`);
+        document.write(`Number list State: ${result}`);
+
+    </script>
+  </body>
+</html>

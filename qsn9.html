@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 9</title>
+  </head>
+  <body>
+    <h3>Boolean checkUnique(char[] word)</h3>
+    <p>
+      Check if all characters in the string are unique.
+      Eg: mobile-true,because all the characters in the string word are
+      unique.
+      calculator-false, because c,i, and a repeat multiple times.
+    </p>
+    <script>
+        let string = prompt("Enter String");
+
+        function checkUnique(str) {
+            var obj = {};
+            for (var i = 0; i < str.length; ++i) {
+                var ch = str[i];
+                if (obj[ch]) return false;
+                obj[ch] = true;
+            }
+            return true;
+        }
+
+        let result = checkUnique(string);
+        document.write(`String is ${string} <br>`);
+        document.write(`String unique: ${result}`);
+    </script>
+  </body>
+</html>

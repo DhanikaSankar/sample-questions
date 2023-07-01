@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <h3>boolean checkWrongOrWrite(char[]a)</h3>
+    <p>Check whether the string contains more or equal to three vowels (a,e,i,o,u) if yes then the string is false,else true.</p>
+    <script>
+        let val = prompt("Enter String");
+
+        const containsVowels = string => {
+            let lowerCase = string.toLowerCase();
+            let word = lowerCase.split("");
+            let vowelsArray = ['a','e','i','o','u'];
+            const result = word.filter(letter => vowelsArray.includes(letter));
+            return result.length >= 3 ? false : true
+        };
+
+        const boolean = containsVowels(val);
+        document.write(`String is ${val} <br>`);
+        document.write(`Given string is ${boolean}`);
+
+    </script>
+    
+</body>
+</html>
