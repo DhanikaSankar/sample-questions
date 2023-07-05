@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome - String</title>
+  </head>
+  <body>
+    <h3>Check the given string is palindrome or not.</h3>
+    <script>
+      let string = prompt("Enter a string");
+      let reverse = string.split("").reverse().join("");
+      if (string === reverse) {
+        document.write(`Given string ${string} is Palindrome`);
+      } else {
+        document.write(`Given string ${string} is not Palindrome`);
+      }
+    </script>
+  </body>
+</html>
