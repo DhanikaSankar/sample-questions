@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Largest Element</title>
+  </head>
+  <body>
+    <h3>Program to print largest element present in an array.</h3>
+    <script>
+      let array = [5, 8, 9, 185, 100, 78,-8];
+      let temp = 0;
+      document.write(`Array elements = [${array}] <br>`);
+      array.map((item) => {
+        if (temp < item) {
+          temp = item;
+        }
+      });
+      document.write(`Largest value in the array is ${temp}`);
+    </script>
+  </body>
+</html>

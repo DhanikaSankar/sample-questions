@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap Numbers</title>
+  </head>
+  <body>
+    <h3>Program to swap two numbers without using the third variable.</h3>
+    <script>
+      let firstNum = parseInt(prompt("Enter first number"));
+      let secondNum = parseInt(prompt("Enter second number"));
+      document.write(`First Number = ${firstNum} <br> Second Number = ${secondNum} <br>`);
+      firstNum = firstNum + secondNum;
+      secondNum = firstNum - secondNum;
+      firstNum = firstNum - secondNum;
+      document.write(`After swapping <br> First Number =  ${firstNum} <br> Second Number = ${secondNum} `);
+    </script>
+  </body>
+</html>
