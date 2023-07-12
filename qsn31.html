@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricx Addition</title>
+</head>
+<body>
+<h3>Program to calculate the addition of 2 matrices</h3>
+    <script>
+        const matrixA = [[1, 2], 
+                        [4, 5]]; 
+  
+        const matrixB = [[1, 2], 
+                    [4, 5]]; 
+  
+        document.write(`Given matrices are <br> Matrix 1 <br>`)
+        for(let i =0;i<2;i++){
+            for(let j=0;j<2;j++){
+                document.write(`${matrixA[i][j]} &nbsp `)
+            }
+            document.write("<br>")
+        }
+
+        document.write(`Matrix 2 <br>`)
+        for(let i =0;i<2;i++){
+            for(let j=0;j<2;j++){
+                document.write(`${matrixB[i][j]} &nbsp `)
+            }
+
+            document.write("<br>")
+        }
+
+        let matrixC = [[],[]];
+        for(let i =0;i<2;i++){
+            for(let j=0;j<2;j++){
+                    matrixC[i][j]=matrixA[i][j]+matrixB[i][j]
+            }
+        }
+
+        document.write(`Addition of Matrix 1 and Matrix 2  <br>`)
+        for(let i =0;i<2;i++){
+            for(let j=0;j<2;j++){
+                document.write(`${matrixC[i][j]} &nbsp `)
+            }
+
+            document.write("<br>")
+        }
+    </script>  
+</body>
+</html>

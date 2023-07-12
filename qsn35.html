@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String - Word Count</title>
+  </head>
+  <body>
+    <h3>Program to count the total number of words in a string.</h3>
+    <script>
+      const string = "Hello    world";
+      let wordCount = 0;
+      const regExp = /\s+/gi;
+
+      if (string == "") {
+        wordCount = 0;
+      } else {
+        wordCount = string.trim().replace(regExp, " ").split(" ").length;
+      }
+
+      document.write(
+        `Total number of words in a string "${string}" is ${wordCount}`
+      );
+    </script>
+  </body>
+</html>

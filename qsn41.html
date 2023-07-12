@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Pyramid-Inverted</title>
+</head>
+<body>
+    <h3>Inverted Right Pyramid Pattern</h3>
+    <script>
+        const rows = 5;
+        for(let i=rows;i>0;i--)
+        {
+            for(let j=rows-1;j>=i;j--)
+            {
+                document.write(" &nbsp;");
+            }
+            for(let k=1;k<=i;k++)
+            {
+                document.write(`*`);
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</body>
+</html>
