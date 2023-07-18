@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Pattern</title>
+</head>
+<body>
+    <h3>Print all number pattern</h3>
+
+    <script>
+        // LEFT
+        const row = 5;
+        document.write(`Left Half Pattern <br>`);
+
+        for(let i=1 ; i<= row ; i++){
+            for(let j=1; j<=i ;j++){
+                document.write(`${j}  `);
+            }
+            document.write(`<br>`);
+        }
+
+        // REVERSE HALF LEFT
+        document.write(`<br>Reverse Left Half Pattern <br>`);
+
+        for(let i=row; i>=1; i--){
+            for(let j=1; j<=i ;j++){
+                document.write(`${j}  `);
+            }
+            document.write(`<br>`);
+        }
+
+        // PYRAMID
+        document.write(`<br>Pyramid Pattern <br>`);
+
+        for (let i = 0; i < row; i++) { 
+            let string = ''; 
+            for (let j = 1; j < row-i; j++) { 
+                string = string + '&nbsp; '; 
+            } 
+            for (let k = 1; k <= (2*i+1); k++) { 
+                string = string + k ; 
+            } 
+            document.write(`${string} <br>`); 
+        }
+
+
+        // REVERSE TRIANGLE PATTERN 
+        document.write(`<br>Reverse Pyramid Pattern <br><br>`);
+
+        let stringItem = "";
+        for (let i = 1; i <= row; i++) {
+            for (let j = 1; j < i; j++) {
+                stringItem += "&nbsp; ";
+            }
+            for (let k = 1; k <= 2 * (5 - i + 1) - 1; k++) {
+                stringItem += k;
+            }
+            stringItem += "<br>";
+        }
+        document.write(stringItem);
+
+
+        // RIGHT HALF 
+        document.write(`<br>Right Half Pattern <br>`);
+
+        for (let i = 1; i <= row; i++) {
+            for (let j = 0; j < row - i; j++) {
+                document.write(`&nbsp;&nbsp`);
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write(`${k}`);
+            }
+            document.write(`<br>`);
+        }
+
+
+        // REVERSE RIGHT HALF
+        document.write(`<br>Reverse Right Half Pattern <br>`);
+
+        for(let i=row; i>=1; i--){
+            for (let j = 0; j < row - i; j++) {
+                document.write(`&nbsp;&nbsp`);
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write(`${k}`);
+            }
+            document.write(`<br>`);
+        }
+
+    </script> 
+</body>
+</html>
